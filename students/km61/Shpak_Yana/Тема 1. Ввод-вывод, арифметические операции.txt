@@ -1,0 +1,146 @@
+#task1---------------------------------------------------------------------
+
+"""
+
+Напишите программу, которая считывает три числа и выводит их сумму.
+Каждое число записано в отдельной строке.
+
+"""
+
+#the program outputs the sum of three numbers
+print('Enter the first number')
+the_first_number=int(input())  #the associated value to the first number
+print('Enter the second number')
+the_second_number=int(input())  #the associated value to the second number
+print('Enter the third number')
+the_third_number=int(input())  #the associated value to the third number
+#сalculate the sum of three numbers
+sum=the_first_number+the_second_number+the_third_number
+print(sum)
+
+#--------------------------------------------------------------------------
+
+#task2-----------------------------------------------------------------------------
+
+"""
+Напишите программу, которая считывает длины двух катетов в прямоугольном 
+треугольнике и выводит его площадь. Каждое число записано в отдельной
+строке. 
+
+"""
+
+#the program outputs the square of a right triangle
+print('Enter the length of the first leg')
+the_first_leg = float(input())  #the value to assign to the first leg
+print('Enter the length of the second leg')
+the_second_leg = float(input())  #the value to assign to the second leg
+#calculate the area of a right triangle
+square = (1/2)*the_first_leg*the_second_leg
+
+
+#--------------------------------------------------------------------------
+
+#task3----------------------------------------------------------------------
+
+"""
+
+Напишите программу, которая приветствует пользователя, выводя слово Hello,
+введенное имя и знаки препинания по образцу: 
+
+"""
+
+#the program displays the user name with punctuation marks
+
+print('Enter the name')
+
+name=input()
+#the value to assign to the first leg
+
+name_program=name+'!'  #assign a name to an exclamation point
+
+print('Hello,',name_program)  #derive the resulting string
+
+#--------------------------------------------------------------------------
+
+#task4---------------------------------------------------------------------
+
+"""
+
+Напишите программу, которая считывает целое число и выводит текст, 
+аналогичный приведенному в примере (пробелы важны!).
+
+"""
+ 
+#the program displays the subsequent number, and before reaching
+print('Enter the number')
+number=int(input()) #assign the value of the number
+print('The next number for the number',str(number),'is',str(number+1)+'.') #print the number and its subsequent value
+print('The previous number for the number', str(number),'is',str(number-1)+'.') #output the number to its previous value
+
+#-------------------------------------------------------------------------------------------------------------------------
+
+#task5---------------------------------------------------------------------
+
+"""
+n школьников делят k яблок поровну, неделящийся остаток остается в корзинке. Сколько яблок достанется каждому школьнику?
+Сколько яблок останется в корзинке? Программа получает на вход числа n и k и должна вывести искомое количество яблок 
+(два числа). 
+
+"""
+
+#the program dividing between students of apples
+print('Enter the number of students')
+students=int(input()) #assign the number of students
+print('Enter the number apples')
+apples=int(input()) #assign the number of apples
+print('The number of apples on the student', apples//students) #print the number of apples the students
+print('The number of apples in a basket', apples%students) #print the number of apples left in the basket
+
+
+#-------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

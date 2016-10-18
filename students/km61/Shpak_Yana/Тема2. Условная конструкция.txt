@@ -1,0 +1,272 @@
+#task2---------------------------------------------------------------------
+
+"""
+
+Даны два целых числа. Выведите значение наименьшего из них. 
+
+"""
+
+#the program displays the number depending on the entered
+print('Enter enter the value of x')
+x=float(input()) #given the value of x
+if x>0: 
+    print('1')
+elif x<0:
+    print('-1')
+else:
+print('0')
+
+#-------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+#task3---------------------------------------------------------------------------------------------------------------------------------------------
+
+"""
+Заданы две клетки шахматной доски. Если они покрашены в один цвет, то 
+выведите слово YES, а если в разные цвета — то NO. Программа получает на 
+вход четыре числа от 1 до 8 каждое, задающие номер столбца и номер строки 
+сначала для первой клетки, потом для второй клетки. 
+
+"""
+
+#program compliance two cells
+print('Enter the value of the first coordinate on the first square of the chessboard')
+the_first_coordinate_on_the_first_cell_of_the_chessboard=int(input())  #the value of the first coordinate on the first cell of the chessboard
+print('Enter the value of the second coordinate on the first square of the chessboard')
+the_second_coordinate_on_the_first_cell_of_the_chessboard=int(input())  #the value of the second coordinates on the first cell of the chessboard
+print('Enter the value of the first coordinate to the second cell of the chessboard')
+the_first_coordinate_to_the_second_cell_of_the_chessboard=int(input())  #the value of the first coordinate to the second cell of the chessboard
+print('Enter the value of to second coordinate for the second cell of the chessboard')
+the_second_coordinate_to_the_second_cell_of_the_chessboard=int(input())  #the value of the second coordinates in the second cell of the chessboard
+#Check the coordinate value and the color assigned to the respective coordinates on the chess Board
+if the_first_coordinate_on_the_first_cell_of_the_chessboard%2==0 and the_second_coordinate_on_the_first_cell_of_the_chessboard%2==1:
+    the_first_cell='black'
+else:
+    the_first_cell='white'
+if the_first_coordinate_to_the_second_cell_of_the_chessboard%2==0 and the_second_coordinate_to_the_second_cell_of_the_chessboard%2==1:
+    the_second_cell='black'
+#Check whether the color of the cells
+#output "yes" if the color of the chess cage match and "no" if not the same
+if the_first_cell==the_second_cell:
+    print('yes')   
+else:
+    print('no')
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------
+
+#task4---------------------------------------------------------------------------------------------------------------------------------------------
+
+"""
+
+Дано натуральное число. Требуется определить, является ли год с данным номером високосным. Если год является високосным, то выведите YES, иначе 
+выведите NO. Напомним, что в соответствии с григорианским календарем, год является високосным, если его номер кратен 4, но не кратен 100, а также 
+если он кратен 400. 
+
+"""
+#a program that considers leap-year
+print('Enter the year')
+year=int(input()) #the associated value of the year
+if year%4==0 and year%100!=0:  #check the year on divisibility by 4 divisibility by 100
+    print('yes') #if positive, output "yes"
+elif year%400==0:
+    print('yes') #if the year is divisible by 400 then print "yes"
+else:
+    print('no') #the remaining values of the year, output "no"
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#task5------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+"""
+Даны три целых числа. Выведите значение наименьшего из них. 
+
+"""
+#the program that displays the minimum number
+print('Enter the first number')
+the_first_number=int(input()) #the value to assign to the first number
+print('Enter the second number')
+the_second_number=int(input()) #the value to assign to the second number
+print('Enter the third number')
+the_third_number=int(input()) #the value to assign to the third number
+if the_first_number<the_second_number and the_first_number<the_third_number:  #compare the first number with the other numbers
+    print('The smallest number is', the_first_number) 
+elif the_second_number<the_first_number and the_second_number<the_third_number:  #compare the second number with the other numbers
+    print('The smallest number is', the_second_number)
+else:
+    print('The smallest number is', the_third_number)
+
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#task6-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+"""
+Шахматная ладья ходит по горизонтали или вертикали. Даны две различные клетки шахматной доски, определите, может ли ладья попасть с первой клетки 
+на вторую одним ходом. Программа получает на вход четыре числа от 1 до 8 каждое, задающие номер столбца и номер строки сначала для первой клетки, 
+потом для второй клетки. Программа должна вывести YES, если из первой клетки ходом ладьи можно попасть во вторую или NO в противном случае. 
+
+"""
+#program for prometa move of the rook
+print('Enter the value of the first coordinate on the first square of the chessboard')
+the_first_coordinate_on_the_first_cell_of_the_chessboard=int(input())  #the value of the first coordinate on the first cell of the chessboard
+print('Enter the value of the second coordinate on the first square of the chessboard')
+the_second_coordinate_on_the_first_cell_of_the_chessboard=int(input())  #the value of the second coordinates on the first cell of the chessboard
+print('Enter the value of the first coordinate to the second cell of the chessboard')
+the_first_coordinate_to_the_second_cell_of_the_chessboard=int(input())  #the value of the first coordinate to the second cell of the chessboard
+print('Enter the value of to second coordinate for the second cell of the chessboard')
+the_second_coordinate_to_the_second_cell_of_the_chessboard=int(input()) #the value of the second coordinates in the second cell of the chessboard
+if the_first_coordinate_on_the_first_cell_of_the_chessboard==the_first_coordinate_to_the_second_cell_of_the_chessboard or the_second_coordinate_on_the_first_cell_of_the_chessboard==the_second_coordinate_to_the_second_cell_of_the_chessboard:
+    print('yes')
+else:
+    print('no')
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#task7---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+"""
+
+Шахматный король ходит по горизонтали, вертикали и диагонали, но только на 1 клетку. Даны две различные клетки шахматной доски, определите, может ли король попасть с первой клетки на вторую одним ходом. Программа получает на вход четыре 
+числа от 1 до 8 каждое, задающие номер столбца и номер строки сначала для первой клетки, потом для второй клетки. Программа должна вывести YES, если из первой клетки ходом короля можно попасть во вторую или NO в противном случае. 
+
+"""
+#program for calculation of moves of the king
+print('Enter the value of the first coordinate on the first square of the chessboard')
+the_first_coordinate_on_the_first_cell_of_the_chessboard=int(input())  #the value of the first coordinate on the first cell of the chessboard
+print('Enter the value of the second coordinate on the first square of the chessboard')
+the_second_coordinate_on_the_first_cell_of_the_chessboard=int(input())  #the value of the second coordinates on the first cell of the chessboard
+print('Enter the value of the first coordinate to the second cell of the chessboard')
+the_first_coordinate_to_the_second_cell_of_the_chessboard=int(input())  #the value of the first coordinate to the second cell of the chessboard
+print('Enter the value of to second coordinate for the second cell of the chessboard')
+the_second_coordinate_to_the_second_cell_of_the_chessboard=int(input()) #the value of the second coordinates in the second cell of the chessboard
+if (the_first_coordinate_on_the_first_cell_of_the_chessboard-1)<=the_first_coordinate_to_the_second_cell_of_the_chessboard<=(the_first_coordinate_on_the_first_cell_of_the_chessboard+1) and (the_second_coordinate_on_the_first_cell_of_the_chessboard-1)<=the_second_coordinate_to_the_second_cell_of_the_chessboard<=(the_second_coordinate_on_the_first_cell_of_the_chessboard+1):
+    print('yes')
+else:
+    print('no')
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
